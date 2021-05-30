@@ -36,9 +36,7 @@ closeButton.addEventListener('click', () => {
     shopBackground.style.visibility = 'hidden'
     shopContainer.style.opacity = '0'
     shopContainer.style.visibility = 'hidden'
-    closeButton.style.transform = 'translateX(-15px)'
     body.style.overflow = 'visible'
-
 })
 
 
@@ -66,7 +64,7 @@ const displayRockets = (allRockets) => {
                 <h3>${allRockets.name}</h3>
                 <p>PRICE: ${allRockets.price} BTC</p>
                 <p>MAX SPEED: ${allRockets.speed}</p>
-                <button></button>
+                <button>BUY</button>
             </li>
         `
         })
