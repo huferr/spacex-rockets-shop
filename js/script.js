@@ -5,8 +5,8 @@ const menuBtn = document.querySelector('.menu_btn')
 let menuOpen = false
 const sideBarMenu = document.getElementById('sidebar_menu')
 const backgroundMenu = document.getElementById('menu_close')
-const body = document.getElementById('body')
 const navItemsList = document.getElementById('nav_item_list')
+
 
 menuBtnContainer.addEventListener('click', () => {
     

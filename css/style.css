@@ -489,6 +489,24 @@ body, html {
         display: block;
     }
 
+    .feature_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 586px;
+        margin: 180px 0 0 30px;
+    }
+    
+    .feature_section_video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 586px;
+        margin: 180px 0 0 30px;
+    }
+
     .footer {
         display: block;
         text-align: center;
@@ -505,7 +523,7 @@ body, html {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 400px) {
     
     .header_container {
         height: 65px;
@@ -529,7 +547,7 @@ body, html {
     }
 
     .sidebar_menu ul {
-        margin: -8rem 2rem 0 0;
+        margin: -5rem 2rem 0 0;
     }
     
     .primary {
