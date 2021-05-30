@@ -43,12 +43,12 @@ closeButton.addEventListener('click', () => {
 
 
 const rockets = [
-    {name: "Falcon 9", price: 50, speed: "6.500 km/h", image: "../images/rockets/falcon9.png" },
-    {name: "Falcon Heavy", price: 70, speed: "9.000 km/h", image: "../images/rockets/falconheavy.png"},
-    {name: "Saturn V", price: 40, speed: "5.000 km/h", image: "../images/rockets/saturnv.png"},
-    {name: "Ariane 5", price: 45, speed: "6.000 km/h", image: "../images/rockets/ariane5.png"},
-    {name: "Energia", price: 20, speed: "3.000 km/h", image: "../images/rockets/energia.png"},
-    {name: "Proton", price: 60, speed: "8.000 km/h", image: "../images/rockets/proton.png"}
+    {name: "Falcon 9", price: 50, speed: "6.500 km/h", image: "./images/rockets/falcon9.png" },
+    {name: "Falcon Heavy", price: 70, speed: "9.000 km/h", image: "./images/rockets/falconheavy.png"},
+    {name: "Saturn V", price: 40, speed: "5.000 km/h", image: "./images/rockets/saturnv.png"},
+    {name: "Ariane 5", price: 45, speed: "6.000 km/h", image: "./images/rockets/ariane5.png"},
+    {name: "Energia", price: 20, speed: "3.000 km/h", image: "./images/rockets/energia.png"},
+    {name: "Proton", price: 60, speed: "8.000 km/h", image: "./images/rockets/proton.png"}
 ]
 
 let rocketsList = document.getElementById('rockets_list')
