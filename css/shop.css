@@ -87,7 +87,7 @@
     padding: 0;
     flex-wrap: wrap;
     overflow-y: auto;
-    justify-content: flex-start;
+    justify-content: space-around;
     border-radius: 10px;
 }
 
@@ -99,9 +99,14 @@
     color: #fff;
     background-color: rgba(151, 148, 148, 0.212);
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-bottom: 30px;
     border-radius: 10px;
     list-style: none;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .rockets img {
@@ -110,13 +115,14 @@
 }
 
 .rockets p {
-    font-size: 12px;
+    font-size: 15px;
+    align-self: flex-start;
 }
 
 .rockets button {
     border: solid 1px #fff;
     background: transparent;
-    width: 150px;
+    width: 50%;
     height: 40px;
     border-radius: 10px;
     color: #fff;
