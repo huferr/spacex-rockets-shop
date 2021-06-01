@@ -53,21 +53,32 @@ const rockets = [
 ]
 
 
-const searchButton = document.getElementById('search_button')
 
-searchButton.addEventListener('keyup', (words) => {
+const valorFilter = document.getElementById('valor_filter')
+const searchInput = document.getElementById('search_input')
+
+valorFilter.addEventListener('click', () => {
+    let maiorValorFilter = rockets.sort((a, b) => {
+        return a.price - b.price
+    })
+
+    displayRockets(maiorValorFilter)
+})
+
+searchInput.addEventListener('keyup', (words) => {
     let wordEntered = words.target.value.toLowerCase()
     
     const filteredRockets = rockets.filter((allRockets) => {
         return (
             allRockets.name.toLowerCase().includes(wordEntered) ||
             allRockets.speed.includes(wordEntered)
-            
         )
     })
 
     displayRockets(filteredRockets)
 })
+
+
 
 
 

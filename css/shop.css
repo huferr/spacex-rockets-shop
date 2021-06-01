@@ -38,14 +38,50 @@
     padding-bottom: 10px;
 }
 
-.nav_shop input {
+.nav_shop h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 50px;
+    align-self: center;
+}
+
+.search_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor_filter {
+    height: 30px;
+    border-radius: 10px;
+    border: solid 1px #666;
+    outline: none;
+    background: rgba(151, 148, 148, 0.212);;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search_input {
     width: 200px;
     height: 30px;
     border-radius: 10px;
-    border: none;
+    border: solid 1px #666;
     outline: none;
+    padding: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: rgba(70, 70, 70, 0.212);
+    color: #fff;
 }
 
+.search_container button:hover {
+    background-color: #fff;
+    transition: 0.3s;
+    color: #000;
+}
 .close_button{
     border: none;
     background: transparent;
@@ -120,7 +156,7 @@
 }
 
 .rockets button {
-    border: solid 1px #fff;
+    border: solid 1px #666;
     background: transparent;
     width: 50%;
     height: 40px;
@@ -135,4 +171,6 @@
     transition: 0.3s;
     color: #000;
 }
+
+
 
