@@ -53,7 +53,8 @@
     align-items: center;
 }
 
-.valor_filter {
+.maior_valor_filter,
+.menor_valor_filter {
     height: 30px;
     border-radius: 10px;
     border: solid 1px #666;

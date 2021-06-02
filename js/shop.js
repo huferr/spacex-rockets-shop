@@ -54,15 +54,22 @@ const rockets = [
 
 
 
-const valorFilter = document.getElementById('valor_filter')
+const maiorValorFilter = document.getElementById('maior_valor_filter')
+const menorValorFilter = document.getElementById('menor_valor_filter')
 const searchInput = document.getElementById('search_input')
 
-valorFilter.addEventListener('click', () => {
-    let maiorValorFilter = rockets.sort((a, b) => {
+menorValorFilter.addEventListener('click', () => {
+    let filter = rockets.sort((a, b) => {
         return a.price - b.price
     })
+    displayRockets(filter)
+})
 
-    displayRockets(maiorValorFilter)
+maiorValorFilter.addEventListener('click', () => {
+    let filter = rockets.sort((a, b) => {
+        return b.price - a.price
+    })
+    displayRockets(filter)
 })
 
 searchInput.addEventListener('keyup', (words) => {
@@ -78,12 +85,8 @@ searchInput.addEventListener('keyup', (words) => {
     displayRockets(filteredRockets)
 })
 
-
-
-
-
 const loadRockets = () => {
-    displayRockets(rockets)
+   displayRockets(rockets)
 }
 
 let rocketsList = document.getElementById('rockets_list')
