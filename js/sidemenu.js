@@ -47,8 +47,3 @@ backgroundMenu.addEventListener('click', () => {
     menuBtn.classList.remove('open')
     menuOpen = false
 })
-
-
-
-
-

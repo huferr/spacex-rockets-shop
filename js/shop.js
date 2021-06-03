@@ -58,6 +58,8 @@ const maiorValorFilter = document.getElementById('maior_valor_filter')
 const menorValorFilter = document.getElementById('menor_valor_filter')
 const searchInput = document.getElementById('search_input')
 
+
+
 menorValorFilter.addEventListener('click', () => {
     let filter = rockets.sort((a, b) => {
         return a.price - b.price
@@ -100,14 +102,20 @@ const displayRockets = (allRockets) => {
                 <h3>${allRockets.name}</h3>
                 <p>PRICE: ${allRockets.price} BTC</p>
                 <p>MAX SPEED: ${allRockets.speed}</p>
-                <button>BUY</button>
+                <button class="buy">BUY</button>
             </li>
         `
         })
         .join("")
-    rocketsList.innerHTML = htmlString  
+
+    rocketsList.innerHTML = htmlString
+
+    login()
 }
 
-loadRockets()
+import {login} from './login.js'
 
+
+
+loadRockets()
 
