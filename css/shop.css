@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
     transition: .5s;
+    backdrop-filter: blur(2px);
 }
 
 .shop_container {

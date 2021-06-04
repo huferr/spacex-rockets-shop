@@ -73,7 +73,5 @@ const displayRockets = (allRockets) => {
 
 import {login} from './login.js'
 
-
-
 loadRockets()
 
