@@ -1,0 +1,148 @@
+.menu_btn_container {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    right: 0px;
+    
+}
+
+.menu_btn {
+    width: 17px;
+    height: 2px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.menu_btn::before,
+.menu_btn::after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+
+.menu_btn::before {
+    transform: translateY(-4px);
+}
+
+.menu_btn::after {
+    transform: translateY(4px);
+}
+
+.menu_btn.open::before {
+    transform: rotate(45deg);
+}
+
+.menu_btn.open::after {
+    transform: rotate(-45deg);
+}
+
+.menu_btn.open {
+    background: transparent;
+}
+
+/*END_HAMBURGUER_MENU*/
+
+
+
+/*START_SIDEBAR_MENU*/
+
+.menu_close {
+    width:100%;
+    height:100%;
+    position:fixed;
+    display:flex;
+    top:0;
+    left:0;
+    z-index:20;
+    background-color:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.5s;
+    visibility: hidden;
+    overflow: none;
+}
+
+.sidebar_menu {
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 20;
+    overflow: none;
+}
+
+.sidebar_menu ul {
+    display: block;
+    text-align: right;
+    margin: -300px 2rem 0 0;
+    list-style-type: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    border-bottom: 1pt solid #252525;
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    color: #797979;
+    transition: 0.5s;
+}
+
+.primary {
+    display: none;
+}
+
+
+/*END_SIDEBAR_MENU*/
+
+@media screen and (max-width: 1050px) {
+    .sidebar_menu ul {
+        margin: -8rem 2rem 0 0;
+    }
+
+    .primary {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar_menu ul {
+        margin: -5rem 2rem 0 0;
+    }
+
+    .primary {
+        display: block;
+    }
+
+}
