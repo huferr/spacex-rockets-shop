@@ -87,8 +87,8 @@
 .close_button{
     border: none;
     background: url(../images/closebutton.png);
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
