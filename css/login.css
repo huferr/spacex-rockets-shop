@@ -6,4 +6,23 @@
     background: rgba(0, 0, 0, 0.5);
     visibility: hidden;
     backdrop-filter: blur(2px);
+    transition: 0.2s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    width: 300px;
+    height: 400px;
+    background: #252525;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.login_container img {
+    width: 210px;
+    max-width: 100%;
 }
