@@ -113,3 +113,11 @@
     transition: 0.3s;
     color: #000;
 }
+
+@media screen and (max-width: 376px) {
+    .headerLogin img {
+        width: 210px;
+        height: 30px;
+        margin: 0 30px 0 auto;
+    }
+}
