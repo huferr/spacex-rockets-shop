@@ -1,5 +1,7 @@
 # SpaceX Rockets Shop
 ![homepage](https://github.com/huferr/spacex-rockets-shop/blob/master/assets/homepage.PNG)
+![shop](https://github.com/huferr/spacex-rockets-shop/blob/master/assets/shop.PNG)
+![login](https://github.com/huferr/spacex-rockets-shop/blob/master/assets/login.PNG)
 
 ## About this project
 Click here to see the project: https://huferr.github.io/spacex-rockets-shop/
