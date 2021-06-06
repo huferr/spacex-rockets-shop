@@ -1,19 +1,17 @@
-.menu_btn_container {
+.menuBtnContainer {
     cursor: pointer;
     width: 1rem;
     height: 1rem;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     z-index: 100;
     position: absolute;
     right: 0px;
-    
 }
 
-.menu_btn {
+.menuBtn {
     width: 17px;
     height: 2px;
     background: #fff;
@@ -21,8 +19,8 @@
     transition: all .3s ease-in-out;
 }
 
-.menu_btn::before,
-.menu_btn::after {
+.menuBtn::before,
+.menuBtn::after {
     content: '';
     position: absolute;
     width: 17px;
@@ -32,41 +30,37 @@
     transition: all .3s ease-in-out;
 }
 
-
-.menu_btn::before {
+.menuBtn::before {
     transform: translateY(-4px);
 }
 
-.menu_btn::after {
+.menuBtn::after {
     transform: translateY(4px);
 }
 
-.menu_btn.open::before {
+.menuBtn.open::before {
     transform: rotate(45deg);
 }
 
-.menu_btn.open::after {
+.menuBtn.open::after {
     transform: rotate(-45deg);
 }
 
-.menu_btn.open {
+.menuBtn.open {
     background: transparent;
 }
 
 /*END_HAMBURGUER_MENU*/
 
-
-
 /*START_SIDEBAR_MENU*/
 
-.menu_close {
+.backgroundMenu {
     width:100%;
     height:100%;
     position:fixed;
     display:flex;
     top:0;
     left:0;
-    z-index:20;
     background-color:rgba(0,0,0,0.5);
     opacity: 0;
     transition: all 0.5s;
@@ -74,7 +68,7 @@
     overflow: none;
 }
 
-.sidebar_menu {
+.sidebarMenu {
     width: 0;
     height: 100%;
     background-color: #000;
@@ -85,11 +79,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 20;
     overflow: none;
 }
 
-.sidebar_menu ul {
+.sidebarMenu ul {
     display: block;
     text-align: right;
     margin: -300px 2rem 0 0;
@@ -98,11 +91,11 @@
     opacity: 0;
 }
 
-.nav-item {
+.navItem {
     text-decoration: none;
 }
 
-.nav-item a {
+.navItem a {
     text-decoration: none;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -114,7 +107,7 @@
     cursor: pointer;
 }
 
-.nav-item a:hover {
+.navItem a:hover {
     color: #797979;
     transition: 0.5s;
 }
@@ -123,26 +116,14 @@
     display: none;
 }
 
-
 /*END_SIDEBAR_MENU*/
 
 @media screen and (max-width: 1050px) {
-    .sidebar_menu ul {
-        margin: -5rem 2rem 0 0;
+    .sidebarMenu ul {
+        margin: -1rem 2rem 0 0;
     }
 
     .primary {
         display: block;
     }
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar_menu ul {
-        margin: -5rem 2rem 0 0;
-    }
-
-    .primary {
-        display: block;
-    }
-
 }

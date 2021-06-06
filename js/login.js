@@ -3,9 +3,9 @@ export function login() {
 
     for (let i = 0; i < buy.length; i++) {
         buy[i].addEventListener('click', () => {
-            const backgroundLogin = document.getElementById('background_login')
-            const loginContainer = document.getElementById('login_container')
-            const closeLoginButton = document.getElementById('close_login_btn')
+            const backgroundLogin = document.getElementById('backgroundLogin')
+            const loginContainer = document.getElementById('loginContainer')
+            const closeLoginButton = document.getElementById('closeLoginBtn')
             
             backgroundLogin.style.visibility = 'visible'
             backgroundLogin.style.opacity = 1
@@ -20,28 +20,28 @@ export function login() {
     }
 }
 
-const loginButton = document.getElementById('login_button')
+const loginButton = document.getElementById('loginButton')
 
     loginButton.addEventListener('click', () => {
         
-        let emailInput = document.getElementById('email_input')
-        let passwordInput = document.getElementById('password_input')
+        let emailInput = document.getElementById('emailInput')
+        let passwordInput = document.getElementById('passwordInput')
         
         if(emailInput.value === "elonmusk@spacex.com" & passwordInput.value === "ilovedogecoin"){
 
-            displayMessage('success',"Now you're Logged in!")
+            displayMessage('Success',"Now you're Logged in!")
 
         } else if(emailInput.value != 'elonmusk@spacex.com' || passwordInput.value != "ilovedogecoin") {
 
-            displayMessage('error', 'Invalid Email/Password, please Try Again!')
+            displayMessage('Error', 'Invalid Email/Password. Please, Try Again!')
         }
         
     })
 
 function displayMessage(situation, message) {
-    let loginMessage = document.getElementById('login_msg')
+    let loginMessage = document.getElementById('loginMsg')
 
-    loginMessage.classList.remove('login_msg_success', 'login_msg_error')
-    loginMessage.classList.add(`login_msg_${situation}`)
+    loginMessage.classList.remove('loginMsgSuccess', 'loginMsgError')
+    loginMessage.classList.add(`loginMsg${situation}`)
     loginMessage.innerHTML = message
 }    

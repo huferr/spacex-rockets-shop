@@ -55,9 +55,9 @@ const rockets = [
     }
 ]
 
-const maiorValorFilter = document.getElementById('maior_valor_filter')
-const menorValorFilter = document.getElementById('menor_valor_filter')
-const searchInput = document.getElementById('search_input')
+const maiorValorFilter = document.getElementById('maiorValorFilter')
+const menorValorFilter = document.getElementById('menorValorFilter')
+const searchInput = document.getElementById('searchInput')
 
 
 searchInput.addEventListener('keyup', (words) => {
@@ -77,7 +77,7 @@ const loadRockets = () => {
    displayRockets(rockets)
 }
 
-let rocketsList = document.getElementById('rockets_list')
+let rocketsList = document.getElementById('rocketsList')
 
 const displayRockets = (allRockets) => {
     const htmlString = allRockets

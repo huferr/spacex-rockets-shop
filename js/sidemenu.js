@@ -1,11 +1,11 @@
 // Hamburguer menu and sidebar Menu
 
-const menuBtnContainer = document.querySelector('.menu_btn_container')
-const menuBtn = document.querySelector('.menu_btn')
+const menuBtnContainer = document.querySelector('.menuBtnContainer') // Variando meios de pegar um elemento
+const menuBtn = document.querySelector('.menuBtn')
 var menuOpen = false
-const sideBarMenu = document.getElementById('sidebar_menu')
-const backgroundMenu = document.getElementById('menu_close')
-const navItemsList = document.getElementById('nav_item_list')
+const sideBarMenu = document.getElementById('sidebarMenu')
+const backgroundMenu = document.getElementById('backgroundMenu')
+const navItemsList = document.getElementById('navItemsList')
 
 
 menuBtnContainer.addEventListener('click', () => {
@@ -48,11 +48,11 @@ backgroundMenu.addEventListener('click', () => {
     menuOpen = false
 })
 
-const shopButton = document.getElementById('shop_btn')
-const shopMenuButton = document.getElementById('shop_menu_btn')
-const shopBackground = document.getElementById('shop_background')
-const shopContainer = document.getElementById('shop_container')
-const closeButton = document.getElementById('close_button')
+const shopButton = document.getElementById('shopBtn')
+const shopMenuButton = document.getElementById('shopMenuBtn')
+const shopBackground = document.getElementById('shopBackground')
+const shopContainer = document.getElementById('shopContainer')
+const closeButton = document.getElementById('closeButton')
 const body = document.getElementById('body')
 
 shopButton.addEventListener('click', () => {

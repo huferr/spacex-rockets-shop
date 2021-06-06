@@ -12,11 +12,11 @@
     <title>SpaceX</title>
 </head>
 <body id="body">
-    <header class="header_container">
-        <div class="img-container">
+    <header class="headerContainer">
+        <div class="imgContainer">
             <a href="./"><img src="./images/SpaceX-Logo.png" alt="SpaceX logo"></a>
         </div>
-        <ul class="nav_list">
+        <ul class="navList">
             <li><a class="aa_nav" href="">FALCON 9</a></li>
             <li><a class="ab_nav" href="">FALCON HEAVY</a></li>
             <li><a class="ac_nav" href="">DRAGON</a></li>
@@ -24,95 +24,87 @@
             <li><a class="ae_nav" href="">HUMAN SPACEFLIGHT</a></li>
             <li><a class="af_nav" href="">RIDESHARE</a></li>
         </ul>
-            <button class="shop_btn" id="shop_btn">SHOP</button>
-
-            <div class="menu_btn_container">
-                <div class="menu_btn"></div>
+            <button class="shopBtn" id="shopBtn">SHOP</button>
+            <div class="menuBtnContainer">
+                <div class="menuBtn"></div>
             </div>
-            <div class="menu_close" id="menu_close"></div>
-                <aside class="sidebar_menu" id="sidebar_menu">
-                    <ul id="nav_item_list">
-                        <li class="nav-item primary"><a href="">FALCON 9</a></li>
-                        <li class="nav-item primary"><a href="">FALCON HEAVY</a></li>
-                        <li class="nav-item primary"><a href="">DRAGON</a></li>
-                        <li class="nav-item primary"><a href="">STARSHIP</a></li>
-                        <li class="nav-item primary"><a href="">HUMAN SPACEFLIGHT</a></li>
-                        <li class="nav-item primary"><a href="">RIDESHARE</a></li>
-                        <li class="nav-item"><a href="">MISSION</a></li>
-                        <li class="nav-item"><a href="">LAUNCHES</a></li>
-                        <li class="nav-item"><a href="">CAREERS</a></li>
-                        <li class="nav-item"><a href="">UPDATES</a></li>
-                        <li class="nav-item"><a id="shop_menu_btn">SHOP</a></li>
+            <div class="backgroundMenu" id="backgroundMenu"></div>
+                <aside class="sidebarMenu" id="sidebarMenu">
+                    <ul id="navItemsList">
+                        <li class="navItem primary"><a href="">FALCON 9</a></li>
+                        <li class="navItem primary"><a href="">FALCON HEAVY</a></li>
+                        <li class="navItem primary"><a href="">DRAGON</a></li>
+                        <li class="navItem primary"><a href="">STARSHIP</a></li>
+                        <li class="navItem primary"><a href="">HUMAN SPACEFLIGHT</a></li>
+                        <li class="navItem primary"><a href="">RIDESHARE</a></li>
+                        <li class="navItem"><a href="">MISSION</a></li>
+                        <li class="navItem"><a href="">LAUNCHES</a></li>
+                        <li class="navItem"><a href="">CAREERS</a></li>
+                        <li class="navItem"><a href="">UPDATES</a></li>
+                        <li class="navItem"><a id="shopMenuBtn">SHOP</a></li>
                     </ul>
                 </aside>    
     </header><!--header-container-->
-
     <!--SHOP-->
-
-    <div class="shop_background" id="shop_background"></div>    
-    <div class="shop_container" id="shop_container">
-        <nav class="nav_shop">
-            <button class="close_button" id="close_button">
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </button>
+    <div class="shopBackground" id="shopBackground"></div>    
+    <div class="shopContainer" id="shopContainer">
+        <nav class="navShop">
+            <button class="closeButton" id="closeButton"></button>
             <h1>Welcome, choose your Rocket!</h1>
-            <div class="search_container">
-                    <button id="maior_valor_filter" class="maior_valor_filter">Maior Valor</button>
-                    <button id="menor_valor_filter" class="menor_valor_filter">Menor Valor</button>
-                <input type="text" placeholder="Search Rockets" id="search_input" class="search_input">
+            <div class="searchContainer">
+                    <button id="maiorValorFilter" class="maiorValorFilter">Maior Valor</button>
+                    <button id="menorValorFilter" class="menorValorFilter">Menor Valor</button>
+                <input type="text" placeholder="Search Rockets" id="searchInput" class="searchInput">
             </div>
         </nav>        
-        <ul class="rockets_list" id="rockets_list">
+        <ul class="rocketsList" id="rocketsList">
 
         </ul>
     </div>
-    <div class="background_login" id="background_login"> <!--Login Screen-->
-        <div class="login_container" id="login_container">
-            <div class="header_login">
-                <button class="close_button" id="close_login_btn"></button>
-                <img src="./images/SpaceX-Logo.png" alt="SpaceX logo"></a>
+    <div class="backgroundLogin" id="backgroundLogin"> <!--Login Screen-->
+        <div class="loginContainer" id="loginContainer">
+            <div class="headerLogin">
+                <button class="closeButton" id="closeLoginBtn"></button>
+                <img src="./images/SpaceX-Logo.png" alt="SpaceX logo">
             </div>
-            <form action="" id="form_container" class="form_container">
-                <div class="inputs_container">
-                    <p id="login_msg"></p>
-                    <input type="text" placeholder="Enter your E-mail" id="email_input">
-                    <input type="password" placeholder="Enter your Password" id="password_input">
+            <form action="" id="formContainer" class="formContainer">
+                <div class="inputsContainer">
+                    <p id="loginMsg"></p>
+                    <input type="text" placeholder="Enter your E-mail" id="emailInput">
+                    <input type="password" placeholder="Enter your Password" id="passwordInput">
                     <a href="#">Forgot Password?</a>
                 </div>
-                <input type="button" value="Login" id="login_button" class="login_button">
+                <input type="button" value="Login" id="loginButton" class="loginButton">
             </form>
         </div>
     </div><!--Login Screen-->
-    
     <!--SHOP--> 
-    
-    <div class="main_content">
-        <section class="feature_section">
-            <h4 class="section_subtitle">UPCOMING LAUNCH</h4>
-            <h1 class="section_title">CRS-22 MISSION</h1>
-            <a class="section_link" href="">
-                <div class="div_hover"><span class="btn_text">REWATCH</span></div>
+    <div class="mainContent">
+        <section class="featureSection">
+            <h4 class="sectionSubtitle">UPCOMING LAUNCH</h4>
+            <h1 class="sectionTitle">CRS-22 MISSION</h1>
+            <a class="sectionLink" href="">
+                <div class="divHover"><span class="btnText">REWATCH</span></div>
             </a>
         </section>
     </div>
-    <div class="second_content">
-        <section class="feature_section">
-            <h4 class="section_subtitle">FLIGHT TEST</h4>
-            <h1 class="section_title">STARSHIP SN15</h1>
-            <a class="section_link" href="">
-                <div class="div_hover"><span class="btn_text">REWATCH</span></div>
+    <div class="secondContent">
+        <section class="featureSection">
+            <h4 class="sectionSubtitle">FLIGHT TEST</h4>
+            <h1 class="sectionTitle">STARSHIP SN15</h1>
+            <a class="sectionLink" href="">
+                <div class="divHover"><span class="btnText">REWATCH</span></div>
             </a>
         </section>
     </div>
-        <div class="third_content">
+        <div class="thirdContent">
             <video autoplay muted loop src="./video/ISS-Docking_Simulation-15sec-03-web.mp4"></video>
-            <section class="feature_section_video">
+            <section class="featureSectionVideo">
                 <h1>DRAGON DOCKING SIMULATOR</h1>
                 <p>Dragon is designed to autonomously dock and undock with the International Space Station. However, 
                     the crew can take manuel control of the spacecraft if necessary.</p>
-                <a class="section_link" href="">
-                    <div class="div_hover"><span class="btn_text">TRY NOW</span></div>
+                <a class="sectionLink" href="">
+                    <div class="divHover"><span class="btnText">TRY NOW</span></div>
                 </a>
             </section>
         </div>

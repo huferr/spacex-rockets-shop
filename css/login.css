@@ -1,4 +1,4 @@
-.background_login {
+.backgroundLogin {
     position: fixed;
     z-index: 220;
     width: 100%;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.login_container {
+.loginContainer {
     width: 300px;
     height: 325px;
     background: #252525;
@@ -31,35 +31,35 @@
     margin-bottom: 25px;
 }
 
-.header_login {
+.headerLogin {
     display: flex;
     width: 100%;
 }
 
-.header_login button {
+.headerLogin button {
     align-self: flex-end;
     position: fixed
 }
 
-.header_login img {
+.headerLogin img {
     width: 210px;
     max-width: 100%;
     margin: 0 30px 0 auto;
 }
 
-.form_container {
+.formContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.inputs_container {
+.inputsContainer {
     display: flex;
     flex-direction: column;
     margin: 25px 0 0 0;  
 }
 
-.login_msg_success {
+.loginMsgSuccess {
     color: rgb(38, 224, 53);
     margin: 0;
     margin-bottom: 25px;
@@ -68,7 +68,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.login_msg_error {
+.loginMsgError {
     color: rgb(219, 29, 29);
     margin: 0;
     margin-bottom: 25px;
@@ -77,7 +77,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.inputs_container input {
+.inputsContainer input {
     width: 250px;
     height: 40px;
     margin-bottom: 25px;
@@ -89,7 +89,7 @@
     outline: none;
 }
 
-.inputs_container a {
+.inputsContainer a {
     color: #fff;
     font-size: 13px;
     text-decoration: none;
@@ -97,7 +97,7 @@
     margin-bottom: 25px;
 }
 
-.login_button {
+.loginButton {
     border: solid 1px #666;
     background: transparent;
     width: 100px;
@@ -109,7 +109,7 @@
     align-self: flex-end;
 }
 
-.login_button:hover {
+.loginButton:hover {
     background-color: #fff;
     transition: 0.3s;
     color: #000;
