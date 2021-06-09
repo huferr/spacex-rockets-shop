@@ -2,7 +2,7 @@
 
 const menuBtnContainer = document.querySelector('.menuBtnContainer') // Variando meios de pegar um elemento
 const menuBtn = document.querySelector('.menuBtn')
-var menuOpen = false
+let menuOpen = false
 const sideBarMenu = document.getElementById('sidebarMenu')
 const backgroundMenu = document.getElementById('backgroundMenu')
 const navItemsList = document.getElementById('navItemsList')
