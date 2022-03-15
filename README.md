@@ -3,14 +3,7 @@
 ## About this project
 Click here to see the project: https://huferr.github.io/spacex-rockets-shop/
 
-This is my first project since I started to learn CSS, HTML and JAVASCRIPT (I've been learning for 3 months). The goal is to show my skills on these tools, recreating the SpaceX website homepage with some new interactions, like the ROCKETS SHOP and LOGIN SCREEN, using some concepts like: 
-
-  - Objects and DOM manipulation;
-  - Map, filter, join, sort and addEventListener;
-  - Loops;
-  - Modulation (import, export);
-  - Responsive Layout, pseudo-classes and pseudo-elements in CSS;
-  - Trying to Best Practices and Refactoring.
+ Recreating the SpaceX website homepage with some new interactions.
 
 ## Tools
   - Javascript;
